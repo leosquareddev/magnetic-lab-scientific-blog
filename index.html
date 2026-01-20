@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnetic Lab</title>
+    <link rel="icon" type="image/svg" href="page-icon.svg">
+    <script src="https://kit.fontawesome.com/560ae1cbc6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <section class="logo-section">
+            <i class="fa-solid fa-magnet" style="color: #8d0801;"></i>
+            <h2 class="logo-name logo-name-header">Magnetic<span>Lab</span></h2>
+        </section>
+        <i class="fa-solid fa-bars hamburger-icon hide"></i>
+        <section class="navigation-header-section">
+            <i class="fa-solid fa-xmark navigation-header-close-icon hide"></i>
+            <div>
+                <ul class="navigation-header-pages-container">
+                    <li class="is-page-active home-page-btn" data-page="home-page">Home</li>
+                    <li data-page="about-us-page">About us</li>
+                    <li data-page="contact-page">Contact</li>
+                    <li data-page="questions-page">FAQ</li>
+                </ul>
+            </div>
+            <div>
+                <i class="fa-solid fa-circle-user no-profile-icon"></i>
+                <i class="fa-solid fa-user profile-icon hide"></i>
+            </div>
+        </section>
+    </header>
+    <main class="home-page blog-page">
+        <section class="cover-section">
+            <section class="featured-cover-post-section">
+                <article class="featured-cover-post blog-post" data-id= "26">
+                    <h1>The Fabric of the Cosmos: What String Theory Suggests About Reality</h1>
+                    <h3>Astronomy</h3>
+                    <h3>By Dr. Omar Liang</h3>
+                    <img src="images/post-26-cosmos-img.jpg">
+                </article>
+            </section>
+            <section class="cover-posts-section">
+
+            </section>
+        </section>
+        <section class="featured-section">
+            <section class="featured-posts-section">
+                
+            </section>
+        </section>
+        <section class="search-and-popular-section">
+            <section class="search-section">
+                <section class="search-section-header">
+                    <h1>Find the latest discoveries in physics, astronomy, <br>mathematics, biology, and more! <br>
+                    </h1>
+                    <div class="search-options-section">
+                        <select name="filter-by-categories" id="filter-by-categories">
+                            <option value="All disciplines">All disciplines</option>
+                            <option value="Technology">Technology</option>
+                            <option value="Physics">Physics</option>
+                            <option value="Biology">Biology</option>
+                            <option value="Environmental Science">Environmental Science</option>
+                            <option value="Astronomy">Astronomy</option>
+                            <option value="Chemistry">Chemistry</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Psychology">Psychology</option>
+                        </select>
+                        <label for="search-posts">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" name="search-posts" id="search-posts-input" placeholder="Search by title or author">
+                        </label>
+                    </div>
+                </section>
+                <section class="search-posts-section">
+
+                </section>
+                <section class="search-posts-pagination-section">
+                    <i class="fa-solid fa-left-long"></i>
+                    <button data-page="0" id="first-search-nav-page-btn">1</button>
+                    <button data-page="1">2</button>
+                    <button data-page="2">3</button>
+                    <button data-page="3">4</button>
+                    <button data-page="4">5</button>
+                    <i class="fa-solid fa-right-long"></i>
+                </section>
+            </section>
+            <section class="popular-and-weekly-best-section">
+                <section class="popular-section">
+                    <h1>
+                        Popular posts
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                    </h1>
+                    <section class="popular-posts-section">
+
+                    </section>
+                </section>
+                <section class="weekly-best-section">
+                    <h1>
+                        Weekly Best
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </h1>
+                    <section class="weekly-best-posts-section">
+
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="editors-pick-section">
+            <h1>
+                Editors Pick
+                <i class="fa-solid fa-lightbulb"></i>
+            </h1>
+            <section class="editors-pick-posts-section">
+
+            </section>
+        </section>
+    </main>
+    <section class="full-post-section hide">
+
+    </section>
+    <section class="signin-modal hide">
+        <div class="registration-options hide">
+            <button class="signin-option">Sign in</button>
+            <button class="signup-option">Sign up</button>
+        </div>
+        <section class="signin-modal-section hide">
+            <i class="fa-solid fa-xmark close-modal-icon"></i>
+            <p>
+                <i class="bi bi-exclamation-circle-fill"></i>
+                This is a demo project. Do not enter real personal information
+            </p>
+            <h1>Sign in to your account</h1>
+            <label for="signin-username-input">
+                Username
+                <input type="text" id="signin-username-input" placeholder="Enter your username">
+            </label>
+            <label for="signin-email-input">
+                Email Address
+                <input type="email" placeholder="Enter your email" id="signin-email-input">
+            </label>
+            <p id="error-message-signin-modal"></p>
+            <button class="signin-btn">Sign In</button>
+        </section>
+        <section class="signedin-message-modal-section hide">
+            <i class="fa-solid fa-xmark close-modal-icon"></i>
+            <h1>You've signed in successfully</h1>
+            <button class="continue-btn-signedin-message">Continue</button>
+        </section>
+        <section class="signup-modal-section hide">
+            <i class="fa-solid fa-xmark close-modal-icon"></i>
+            <p>
+                <i class="bi bi-exclamation-circle-fill"></i>
+                This is a demo project. Do not enter real personal information
+            </p>
+            <h1>Create an account</h1>
+            <label for="signup-username-input">
+                Username
+                <input type="text" id="signup-username-input" placeholder="Enter your username">
+            </label>
+            <label for="signup-datebirth-input">
+                Date of Birth
+                <input type="date" id="signup-datebirth-input">
+            </label>
+            <label for="signup-email-input">
+                Email Address
+                <input type="email" placeholder="Enter your email" id="signup-email-input">
+            </label>
+            <p id="error-message-signup-modal"></p>
+            <button class="signup-btn">Sign Up</button>
+        </section>
+        <section class="signedup-message-modal-section hide">
+            <i class="fa-solid fa-xmark close-modal-icon"></i>
+            <h1>Your account was created successfully, click on Continue to sign in</h1>
+            <button class="continue-btn-signedup-message">Continue</button>
+        </section>
+    </section>
+    <section class="delete-comment-modal hide">
+        <div class="delete-comment-modal-section">
+            <i class="fa-solid fa-triangle-exclamation" style="color: #bf0603;"></i>
+            <h1>Are you sure you want to delete this comment?</h1>
+            <div>
+                <button id="modal-cancel-delete-comment-btn">Cancel</button>
+                <button id="modal-delete-comment-btn">Delete comment</button>
+            </div>
+        </div>
+    </section>
+    <section class="sidebar-account-settings-section">
+        <i class="fa-solid fa-xmark close-sidebar-acc-settings-icon"></i>
+        <div class="sidebar-account-settings">
+            <div>
+                <h1 id="sidebar-acc-settings-username">username</h1>
+                <p id="sidebar-acc-settings-email">email</p>
+                <button id="delete-acc-btn">Delete My Account</button>
+            </div>
+            <div>
+                <div class="sidebar-acc-bottom-settings">
+                    <div class="light-dark-toggle">
+                        <i class="bi bi-brightness-high-fill"></i>
+                        <label class="toggle-box">
+                            <input type="checkbox" class="toggle-checkbox hide">
+                            <div class="toggle-circle"></div>
+                        </label>
+                        <i class="bi bi-moon-fill"></i>
+                    </div>
+                    <button id="log-out-account-btn">
+                        Log out
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </button>
+                </div>
+                <section>
+                    <i class="fa-solid fa-magnet" style="color: #8d0801; font-size: 35px;"></i>
+                    <h2 class="logo-name">Magnetic<span>Lab</span></h2>
+                </section>
+            </div>
+        </div>
+    </section>
+    <section class="delete-acc-modal hide">
+        <div class="delete-acc-modal-section">
+            <i class="fa-solid fa-triangle-exclamation" style="color: #bf0603;"></i>
+            <h1>Are you sure you want to delete your account?</h1>
+            <h4>By doing this, your account will be deleted permanently and will never be recovered. However, all your information about comments is preserved.</h4>
+            <div>
+                <button id="modal-cancel-delete-acc-btn">Cancel</button>
+                <button id="modal-delete-acc-btn">Delete account</button>
+            </div>
+        </div>
+    </section>
+    <section class="deleted-account-message-modal-section hide">
+        <h1>Your account has been deleted successfully</h1>
+    </section>
+    <section class="about-us-page blog-page hide">
+        <img src="images/about-us-background.jpg" alt="" width="700px">
+        <h3><span>MagneticLab</span> is a digital space created for curious minds who want to explore the science shaping our world. We believe scientific knowledge should be accessible, engaging, and grounded in real expertise. Every article on our platform is written by specialists who bring years of experience from academia, research institutions, industry laboratories, and cutting-edge tech fields.</h3>
+        <h1>Our Mission</h1>
+        <h3>To make science understandable, inspiring, and relevant for everyone. Whether you are a student, a researcher, a lifelong learner, or simply someone who loves exploring new ideas, <span>MagneticLab</span> is designed to introduce you to the latest discoveries, thoughtful insights, and breakthroughs happening across all branches of science.</h3>
+        <h1>Our Purpose</h1>
+        <div class="our-purpose-section">
+            <div>
+                <h3>Bridge Experts and Readers</h3>
+                <p>All our posts are written by professionals, scientists, researchers, and engineers, ensuring every concept is clear, accurate, and trustworthy. We aim to break down complex topics without oversimplifying them.</p>
+            </div>
+            <div>
+                <h3>Encourage Curiosity</h3>
+                <p>We believe curiosity is the beginning of discovery. <span>MagneticLab</span> is built to spark questions, inspire creativity, and help readers navigate the ever-changing world of scientific advancement.</p>
+            </div>
+            <div>
+                <h3>Provide High-Quality, Accessible Knowledge</h3>
+                <p>No jargon without explanation. No shallow summaries. Each article is designed as a mini-learning experience with depth, structure, and real-world relevance.</p>
+            </div>
+        </div>
+        <h1>What You’ll Find on <span>MagneticLab</span></h1>
+        <div class="what-to-find-section">
+            <div>
+                <h3>In-depth Articles</h3>
+                <p>Long-form posts divided into sections, designed to help readers truly understand each topic, from quantum mechanics to cognitive psychology.</p>
+            </div>
+            <div>
+                <h3>Expert Writing</h3>
+                <p>Each category has a dedicated author specializing in their field, bringing unique perspectives shaped by research and professional experience.</p>
+            </div>
+            <div>
+                <h3>Cross-Disciplinary Insights</h3>
+                <p>We believe science doesn’t exist in silos. Our posts often connect ideas across disciplines, showing how chemistry influences technology, how physics shapes astronomy, or how psychology interacts with biology.</p>
+            </div>
+            <div>
+                <h3>A Modern, Clean Reading Experience</h3>
+                <p>Our website is designed to be readable, minimalistic, and intuitive, allowing you to focus entirely on learning.</p>
+            </div>
+        </div>
+        <h1>Meet our team</h1>
+        <div class="meet-team-section">
+            
+        </div>
+    </section>
+    <section class="contact-page blog-page hide">
+        <h1>Do you have any questions or ideas?</h1>
+        <p>We'd like to know about you for colaborations, questions about our articles, or just to greet, use the form below or any of our contact methods. IMPORTANT: This is a demo project. Do not enter real personal information</p>
+        <div class="contact-form-section">
+            <div class="contact-form-left-section">
+                <div>
+                    <label for="name-input">
+                        Name
+                        <input type="text" id="name-input" placeholder="Enter your name">
+                    </label>
+                </div>
+                <div>
+                    <label for="email-input">
+                        Email Address
+                        <input type="email" id="email-input" placeholder="Enter your email address">
+                    </label>
+                </div>
+                <div>
+                    <label for="subject-input">
+                        Subject
+                        <input type="text" id="subject-input" placeholder="Add a subject">
+                    </label>
+                </div>
+                <div>
+                    <label for="message-textarea">
+                        Message
+                        <textarea name="message-textarea" id="message-textarea" cols="30" rows="6" placeholder="Add your message"></textarea>
+                    </label>
+                </div>
+                <button id="send-message-btn">Send message</button>
+                <p id="error-message-contact-form"></p>
+            </div>
+            <div class="contact-form-right-section">
+                <h2>Other ways to contact</h2>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    magneticlabcontact@gmail.com
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    + 1 248 838 0000
+                </p>
+                <h3>Our location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218822.80165158235!2d-74.0619272934836!3d40.70089350480146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York!5e1!3m2!1ses!2sus!4v1764904354322!5m2!1ses!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="questions-page blog-page hide">
+        <h1>FAQ - Frequent Questions</h1>
+        <p>Find the answers to the most common questions about MagneticLab</p>
+        <div class="faq-container">
+            <div class="question-answer-section">
+                <div class="question">
+                    <h2>What is the purpose of this scientific blog?</h2>
+                    <i class="fa-solid fa-angle-down show-answer-icon"></i>
+                    <i class="fa-solid fa-angle-up hide-answer-icon hide"></i>
+                </div>
+                <div class="answer">
+                    <h4>This blog was created as a fictional project designed to demonstrate front-end development skills, UI/UX design, and project architecture. Although the posts explore scientific topics, the content is not intended to serve as an authoritative or academic resource. Its main purpose is to showcase coding abilities and simulate the experience of a modern scientific blog.</h4>
+                </div>
+            </div>
+            <div class="question-answer-section">
+                <div class="question">
+                    <h2>Who writes the articles?</h2>
+                    <i class="fa-solid fa-angle-down show-answer-icon"></i>
+                    <i class="fa-solid fa-angle-up hide-answer-icon hide"></i>
+                </div>
+                <div class="answer">
+                    <h4>All authors and professional backgrounds displayed on the website are fictional, created solely for demonstration purposes. Each scientific category is assigned a fictional specialist to show how an actual blog would organize its content.</h4>
+                </div>
+            </div>
+            <div class="question-answer-section">
+                <div class="question">
+                    <h2>How often do you publish new content?</h2>
+                    <i class="fa-solid fa-angle-down show-answer-icon"></i>
+                    <i class="fa-solid fa-angle-up hide-answer-icon hide"></i>
+                </div>
+                <div class="answer">
+                    <h4>New posts are added only when updating or improving the portfolio project. This site does not follow a real publication schedule, as it is not an active scientific platform.</h4>
+                </div>
+            </div>
+            <div class="question-answer-section">
+                <div class="question">
+                    <h2>Are the articles scientifically accurate?</h2>
+                    <i class="fa-solid fa-angle-down show-answer-icon"></i>
+                    <i class="fa-solid fa-angle-up hide-answer-icon hide"></i>
+                </div>
+                <div class="answer">
+                    <h4>No. While the topics are inspired by real scientific concepts, the articles are not intended to provide verified or academically accurate scientific information. They exist only as sample content for the portfolio project.</h4>
+                </div>
+            </div>
+            <div class="question-answer-section">
+                <div class="question">
+                    <h2>Can I comment on blog posts?</h2>
+                    <i class="fa-solid fa-angle-down show-answer-icon"></i>
+                    <i class="fa-solid fa-angle-up hide-answer-icon hide"></i>
+                </div>
+                <div class="answer">
+                    <h4>Yes, but the comments are only a simulation. The blog uses localStorage to allow users to create, delete, edit, upvote and downvote comments in their own browser. These comments and interactivity are never sent to a server or stored externally.</h4>
+                </div>
+            </div>
+            <div class="question-answer-section">
+                <div class="question">
+                    <h2>How does the comment system work?</h2>
+                    <i class="fa-solid fa-angle-down show-answer-icon"></i>
+                    <i class="fa-solid fa-angle-up hide-answer-icon hide"></i>
+                </div>
+                <div class="answer">
+                    <h4>The comment system is entirely client-side. Your comments are saved only in your browser through localStorage. This is meant for demonstration only and simulates how a real comment system might behave in an actual application.</h4>
+                </div>
+            </div>
+            <div class="question-answer-section">
+                <div class="question">
+                    <h2>Can I suggest topics for future articles?</h2>
+                    <i class="fa-solid fa-angle-down show-answer-icon"></i>
+                    <i class="fa-solid fa-angle-up hide-answer-icon hide"></i>
+                </div>
+                <div class="answer">
+                    <h4>You can leave suggestions through comments or forms if available, but they are not reviewed or managed by real authors. This blog does not operate as a real scientific publishing platform.</h4>
+                </div>
+            </div>
+            <div class="question-answer-section">
+                <div class="question">
+                    <h2>Is the blog suitable for beginners?</h2>
+                    <i class="fa-solid fa-angle-down show-answer-icon"></i>
+                    <i class="fa-solid fa-angle-up hide-answer-icon hide"></i>
+                </div>
+                <div class="answer">
+                    <h4>Yes if you want to explore how a fictional science-themed website might look. But the content should not be used as a learning resource for real scientific studies.</h4>
+                </div>
+            </div>
+            <div class="question-answer-section">
+                <div class="question">
+                    <h2>Why don’t I see my comments or all my profile data on other devices?</h2>
+                    <i class="fa-solid fa-angle-down show-answer-icon"></i>
+                    <i class="fa-solid fa-angle-up hide-answer-icon hide"></i>
+                </div>
+                <div class="answer">
+                    <h4>Because nothing is stored on a server. All data stays locally in your browser. If you switch devices, clear your cache, or use a different browser, your comments, session and all information disappear.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section class="footer-left-section">
+            <div class="footer-left-section-logo-section">
+                <i class="fa-solid fa-magnet" style="color: #8d0801; font-size: 35px;"></i>
+                <h2 class="logo-name">Magnetic<span>Lab</span></h2>
+            </div>
+            <div class="footer-left-section-info">
+                <p>New York, NY</p>
+                <p>United States</p>
+                <div>
+                    <div>
+                        <p>Phone Number</p>
+                        <p>+1 248 838 0000</p>
+                    </div>
+                    <div>
+                        <p>Email</p>
+                        <p>magneticlabcontact@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-right-section">
+            <div>
+                <ul class="navigation-footer-pages-container">
+                    <li class="is-page-active home-page-btn" data-page="home-page">Home</li>
+                    <li data-page="about-us-page">About us</li>
+                    <li data-page="contact-page">Contact</li>
+                    <li data-page="questions-page">FAQ</li>
+                </ul>
+            </div>
+            <div>
+                <i class="bi bi-c-circle"></i>
+                <h5 id="copyright-year-el">All rights reserved</h5>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
